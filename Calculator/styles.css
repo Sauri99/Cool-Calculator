@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a1a1a; /* Dark background color */
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 400px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: #2e2e2e; /* Calculator background color */
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.display {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+#display {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: right;
+    background-color: #444;
+    color: #fff;
+    border: 2px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input-output-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.input-label,
+.output-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#input-display,
+#output-display {
+    border: 1px solid #555;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color: #666;
+}
+
+.button {
+    padding: 20px;
+    font-size: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition for button animations */
+}
+
+.button:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+}
+
+.history-section {
+    grid-column: span 4;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.history-label {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#history-display {
+    border: 1px solid #555;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #666;
+    overflow-y: auto;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo span {
+    display: block;
+    background-color: #4682b4; /* Steel blue color */
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+

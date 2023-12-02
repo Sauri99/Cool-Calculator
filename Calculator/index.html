@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <!-- Logo -->
+        <div class="logo">
+            <span>SAURAV</span>
+        </div>
+
+        <div class="history-section">
+            <div class="history-label">History:</div>
+            <div id="history-display"></div>
+        </div>
+
+        <div class="display">
+            <div class="input-output-section">
+                <div class="input-label">Input:</div>
+                <div id="input-display"></div>
+            </div>
+
+            <div id="display" class="output-display" disabled></div>
+
+            <div class="input-output-section">
+                <div class="output-label">Output:</div>
+                <div id="output-display"></div>
+            </div>
+        </div>
+
+        <!-- Calculator Buttons -->
+        <div class="button" onclick="clearDisplay()">C</div>
+        <div class="button" onclick="appendToDisplay('1')">1</div>
+        <div class="button" onclick="appendToDisplay('2')">2</div>
+        <div class="button" onclick="appendToDisplay('3')">3</div>
+        <div class="button" onclick="appendToDisplay('+')">+</div>
+        <div class="button" onclick="appendToDisplay('4')">4</div>
+        <div class="button" onclick="appendToDisplay('5')">5</div>
+        <div class="button" onclick="appendToDisplay('6')">6</div>
+        <div class="button" onclick="appendToDisplay('-')">-</div>
+        <div class="button" onclick="appendToDisplay('7')">7</div>
+        <div class="button" onclick="appendToDisplay('8')">8</div>
+        <div class="button" onclick="appendToDisplay('9')">9</div>
+        <div class="button" onclick="appendToDisplay('*')">*</div>
+        <div class="button" onclick="appendToDisplay('0')">0</div>
+        <div class="button" onclick="appendToDisplay('.')">.</div>
+        <div class="button" onclick="appendToDisplay('/')">/</div>
+        <div class="button" onclick="calculateResult()">=</div>
+
+        <!-- Advanced Mathematical Functions -->
+        <div class="button" onclick="appendToDisplay('sqrt(')">√</div>
+        <div class="button" onclick="appendToDisplay('**2')">x²</div>
+        <div class="button" onclick="appendToDisplay('**')">^</div>
+        <div class="button" onclick="appendToDisplay('Math.sin(')">sin</div>
+        <div class="button" onclick="appendToDisplay('Math.cos(')">cos</div>
+        <div class="button" onclick="appendToDisplay('Math.tan(')">tan</div>
+        <div class="button" onclick="appendToDisplay('Math.log10(')">log</div>
+        <div class="button" onclick="appendToDisplay('Math.exp(')">exp</div>
+        <div class="button" onclick="appendToDisplay('(')">(</div>
+        <div class="button" onclick="appendToDisplay(')')">)</div>
+        <div class="button" onclick="toggleSign()">±</div>
+        <div class="button" onclick="calculatePercentage()">%</div>
+        <div class="button" onclick="memoryAdd()">M+</div>
+        <div class="button" onclick="memoryClear()">MC</div>
+        <div class="button" onclick="memoryRecall()">MR</div>
+        <div class="button" onclick="backspace()">⌫</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
